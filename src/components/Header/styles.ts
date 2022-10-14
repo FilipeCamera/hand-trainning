@@ -6,10 +6,15 @@ export const styles = () =>
     container: {
       width: "100%",
       marginTop: 32,
-      paddingHorizontal: 16,
+      paddingVertical: 5,
       flexDirection: "row",
       alignItems: "center",
       justifyContent: "center",
+    },
+    icon: {
+      position: "absolute",
+      left: 16,
+      //top: 20,
     },
     text: {
       fontFamily: THEME.FONT_FAMILY[600],

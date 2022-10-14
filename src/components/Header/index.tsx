@@ -10,7 +10,9 @@ interface HeaderProps {
 export default function Header({ title }: HeaderProps) {
   return (
     <View style={styles().container}>
-      <Button title="" icon={<ArrowBack />} />
+      <View style={styles().icon}>
+        <Button title="" icon={<ArrowBack />} />
+      </View>
       <Text style={styles().text}>{title}</Text>
     </View>
   );

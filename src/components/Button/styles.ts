@@ -14,7 +14,7 @@ export const styles = (
       borderRadius: 8,
       alignItems: "center",
       justifyContent: "center",
-      height: !!icon ? 32 : 56,
+      height: !!icon ? 24 : 56,
       marginVertical,
     },
     text: {

@@ -1,16 +1,20 @@
 import { StyleSheet } from "react-native";
 import THEME from "../../styles/theme";
 
-export const styles = (outlined: boolean, marginVertical?: number) =>
+export const styles = (
+  outlined: boolean,
+  marginVertical?: number,
+  icon?: any
+) =>
   StyleSheet.create({
     container: {
-      backgroundColor: outlined ? "" : THEME.BACKGROUND_COLOR.GREEN,
+      backgroundColor: outlined || !!icon ? "" : THEME.BACKGROUND_COLOR.GREEN,
       borderWidth: outlined ? 1 : 0,
       borderColor: THEME.BORDER_COLOR.GREEN,
       borderRadius: 8,
       alignItems: "center",
       justifyContent: "center",
-      height: 56,
+      height: !!icon ? 32 : 56,
       marginVertical,
     },
     text: {

@@ -5,20 +5,22 @@ interface ButtonProps extends TouchableOpacityProps {
   title: string;
   outlined?: boolean;
   marginVertical?: number;
+  icon?: any;
 }
 
 export default function Button({
   title,
   outlined,
+  icon,
   marginVertical,
   ...props
 }: ButtonProps) {
   return (
     <TouchableOpacity
       {...props}
-      style={styles(outlined, marginVertical).container}
+      style={styles(outlined, marginVertical, icon).container}
     >
-      <Text style={styles(outlined).text}>{title}</Text>
+      {!!icon ? icon : <Text style={styles(outlined).text}>{title}</Text>}
     </TouchableOpacity>
   );
 }

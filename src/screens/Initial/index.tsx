@@ -21,10 +21,10 @@ export default function Initial({ navigation }) {
         <View style={styles.buttons}>
           <Button
             title="Começar"
-            marginVertical={3}
+            marginVertical={4}
             onPress={() => navigation.navigate("Registrar")}
           />
-          <Button title="Já tenho uma conta" outlined marginVertical={3} />
+          <Button title="Já tenho uma conta" outlined marginVertical={4} />
         </View>
       </Scroll>
     </LinearBackground>

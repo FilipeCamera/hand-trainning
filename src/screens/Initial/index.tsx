@@ -1,23 +1,19 @@
-import { View, Dimensions } from "react-native";
+import { View } from "react-native";
 import styles from "./styles";
 import LogoText from "../../assets/svg/logotext.svg";
 import RunnerGirl from "../../assets/svg/runner_girl.svg";
 import Button from "../../components/Button";
 import LinearBackground from "../../components/LinearBackground";
 import Scroll from "../../components/Scroll";
+import { responsive } from "../../utils/responsive";
 
-const responsiveWidth = (value: number) => {
-  const widthUI = 414;
-  const { width } = Dimensions.get("screen");
-  return (width * value) / widthUI;
-};
 
 export default function Initial({ navigation }) {
   return (
     <LinearBackground>
       <Scroll showsVerticalScrollIndicator={false}>
-        <LogoText style={styles.logo_text} width={responsiveWidth(220)} />
-        <RunnerGirl style={styles.girl_runner} width={responsiveWidth(200)} />
+        <LogoText style={styles.logo_text} width={responsive(220)} />
+        <RunnerGirl style={styles.girl_runner} width={responsive(200)} />
         <View style={styles.buttons}>
           <Button
             title="Começar"

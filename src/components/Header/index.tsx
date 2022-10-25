@@ -5,13 +5,18 @@ import { styles } from "./styles";
 
 interface HeaderProps {
   title: string;
+  navigation: any;
 }
 
-export default function Header({ title }: HeaderProps) {
+export default function Header({ title, navigation }: HeaderProps) {
   return (
     <View style={styles().container}>
       <View style={styles().icon}>
-        <Button title="" icon={<ArrowBack />} />
+        <Button
+          title=""
+          icon={<ArrowBack />}
+          onPress={() => navigation.goBack()}
+        />
       </View>
       <Text style={styles().text}>{title}</Text>
     </View>

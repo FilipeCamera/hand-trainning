@@ -3,24 +3,30 @@ import { styles } from "./styles";
 
 interface ButtonProps extends TouchableOpacityProps {
   title: string;
-  outlined?: boolean;
+  secundary?: boolean;
+  common?: boolean;
   marginVertical?: number;
   icon?: any;
 }
 
 export default function Button({
   title,
-  outlined,
+  secundary,
   icon,
+  common,
   marginVertical,
   ...props
 }: ButtonProps) {
   return (
     <TouchableOpacity
       {...props}
-      style={styles(outlined, marginVertical, icon).container}
+      style={styles(secundary, common, marginVertical, icon).container}
     >
-      {!!icon ? icon : <Text style={styles(outlined).text}>{title}</Text>}
+      {!!icon ? (
+        icon
+      ) : (
+        <Text style={styles(secundary, common).text}>{title}</Text>
+      )}
     </TouchableOpacity>
   );
 }

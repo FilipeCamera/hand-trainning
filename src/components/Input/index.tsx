@@ -9,7 +9,7 @@ export default function Input({ ...props }: InputProps) {
     <TextInput
       {...props}
       style={styles().container}
-      placeholderTextColor={THEME.TEXT_COLOR.GRAY}
+      placeholderTextColor={THEME.TEXT_COLOR.BLUE_DARK}
     />
   );
 }

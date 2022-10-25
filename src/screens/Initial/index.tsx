@@ -6,7 +6,7 @@ import Button from "../../components/Button";
 import LinearBackground from "../../components/LinearBackground";
 import Scroll from "../../components/Scroll";
 import { responsive } from "../../utils/responsive";
-
+import THEME from "../../styles/theme";
 
 export default function Initial({ navigation }) {
   return (
@@ -20,7 +20,7 @@ export default function Initial({ navigation }) {
             marginVertical={4}
             onPress={() => navigation.navigate("Registrar")}
           />
-          <Button title="Já tenho uma conta" outlined marginVertical={4} />
+          <Button title="Já tenho uma conta" secundary marginVertical={4} />
         </View>
       </Scroll>
     </LinearBackground>

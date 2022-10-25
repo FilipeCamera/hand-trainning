@@ -19,6 +19,6 @@ export const styles = () =>
     text: {
       fontFamily: THEME.FONT_FAMILY[600],
       fontSize: THEME.FONT_SIZE.LG,
-      color: THEME.TEXT_COLOR.GREEN,
+      color: THEME.TEXT_COLOR.BLUE_DARK,
     },
   });

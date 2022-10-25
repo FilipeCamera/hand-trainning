@@ -7,11 +7,13 @@ import Scroll from "../../components/Scroll";
 import Space from "../../components/Space";
 import { styles } from "./styles";
 
-export default function Registrar() {
+// TODO: finalizar a tela de registrar adicionando os últimos componentes
+
+export default function Registrar({ navigation }) {
   return (
-    <LinearBackground>
+    <View style={styles().container}>
       <Scroll showsVerticalScrollIndicator={false}>
-        <Header title="Registrar" />
+        <Header title="Registrar" navigation={navigation} />
         <Space value={16} />
         <Input placeholder="E-mail" />
         <Space value={5} />
@@ -20,14 +22,17 @@ export default function Registrar() {
         <Input placeholder="Confimar senha" />
         <Space value={28} />
         <View style={styles().button_full}>
-          <Button title="Cadastrar" />
+          <Button title="Cadastrar" secundary common />
         </View>
         <Space value={8} />
-        <View>
-          <Text>Já possui uma conta?</Text>
-          <Button title="" icon={<Text>Faça o login</Text>} />
+        <View style={styles().box_button_login}>
+          <Text style={styles().text_login}>Já possui uma conta?</Text>
+          <Button
+            title=""
+            icon={<Text style={styles().text_login_button}>Faça o login</Text>}
+          />
         </View>
       </Scroll>
-    </LinearBackground>
+    </View>
   );
 }

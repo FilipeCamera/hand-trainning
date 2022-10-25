@@ -1,20 +1,24 @@
 const THEME = {
   LINEAR_GRADIENT_COLOR: {
-    START: "#4a4a4a",
-    END: "#242822",
+    START: "#4D88FF",
+    END: "#3966BF",
   },
   BACKGROUND_COLOR: {
-    GREY: "#5c605b",
-    GREEN: "#63df68",
+    BLUE: "#457AE4",
+    BLUE_DARK: "#253452",
+    LIGHT_WHITE: "#F1F4FA",
+    WHITE: "#FFF",
   },
   TEXT_COLOR: {
+    BLUE: "#457AE4",
+    BLUE_DARK: "#4C5673",
     GRAY: "#c1c1c1",
     GRAY_LIGHT: "#D8D8D8",
-    GREEN: "#63df68",
     WHITE: "#fff",
   },
   BORDER_COLOR: {
-    GREEN: "#63df68",
+    BLUE_LIGHT: "#DAE4FA",
+    BLUE_DARKNESS: "#1E2A42",
   },
   FONT_SIZE: {
     SM: 14,

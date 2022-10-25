@@ -2,24 +2,39 @@ import { StyleSheet } from "react-native";
 import THEME from "../../styles/theme";
 
 export const styles = (
-  outlined: boolean,
+  secundary: boolean,
+  common?: boolean,
   marginVertical?: number,
-  icon?: any
+  icon?: any,
+  color_white?: boolean
 ) =>
   StyleSheet.create({
     container: {
-      backgroundColor: outlined || !!icon ? "" : THEME.BACKGROUND_COLOR.GREEN,
-      borderWidth: outlined ? 1 : 0,
-      borderColor: THEME.BORDER_COLOR.GREEN,
+      backgroundColor: !!icon
+        ? ""
+        : secundary
+        ? common
+          ? THEME.BACKGROUND_COLOR.BLUE
+          : THEME.BACKGROUND_COLOR.WHITE
+        : THEME.BACKGROUND_COLOR.BLUE_DARK,
       borderRadius: 8,
       alignItems: "center",
       justifyContent: "center",
       height: !!icon ? 24 : 56,
       marginVertical,
+      borderWidth: !!icon || common ? 0 : 2,
+      borderColor: secundary
+        ? THEME.BORDER_COLOR.BLUE_LIGHT
+        : THEME.BORDER_COLOR.BLUE_DARKNESS,
+      elevation: common ? 4 : 0,
     },
     text: {
       fontSize: THEME.FONT_SIZE.SM,
-      fontFamily: outlined ? THEME.FONT_FAMILY[500] : THEME.FONT_FAMILY[600],
-      color: outlined ? THEME.TEXT_COLOR.GREEN : THEME.TEXT_COLOR.WHITE,
+      fontFamily: secundary ? THEME.FONT_FAMILY[500] : THEME.FONT_FAMILY[600],
+      color: secundary
+        ? common
+          ? THEME.TEXT_COLOR.WHITE
+          : THEME.TEXT_COLOR.BLUE_DARK
+        : THEME.TEXT_COLOR.WHITE,
     },
   });

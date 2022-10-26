@@ -19,6 +19,8 @@ const THEME = {
   BORDER_COLOR: {
     BLUE_LIGHT: "#DAE4FA",
     BLUE_DARKNESS: "#1E2A42",
+    GRAY_LIGHT: "#DEDEDE",
+    GRAY: "#999",
   },
   FONT_SIZE: {
     SM: 14,

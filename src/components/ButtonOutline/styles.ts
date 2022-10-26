@@ -1,24 +1,27 @@
 import { StyleSheet } from "react-native";
 import THEME from "../../styles/theme";
 
-export const styles = () =>
+const styles = () =>
   StyleSheet.create({
     container: {
       width: "100%",
-      marginTop: 32,
-      paddingVertical: 5,
-      flexDirection: "row",
+      height: 56,
       alignItems: "center",
       justifyContent: "center",
-    },
-    icon: {
-      position: "absolute",
-      left: 16,
-      //top: 20,
+      borderRadius: 8,
+      borderWidth: 1,
+      marginVertical: 4,
+      borderColor: THEME.BORDER_COLOR.GRAY_LIGHT,
     },
     text: {
       fontFamily: THEME.FONT_FAMILY[500],
-      fontSize: THEME.FONT_SIZE.LG,
+      fontSize: THEME.FONT_SIZE.SM,
       color: THEME.TEXT_COLOR.BLUE_DARK,
     },
+    icon: {
+      position: "absolute",
+      left: 22,
+    },
   });
+
+export default styles;

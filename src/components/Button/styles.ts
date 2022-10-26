@@ -5,8 +5,7 @@ export const styles = (
   secundary: boolean,
   common?: boolean,
   marginVertical?: number,
-  icon?: any,
-  color_white?: boolean
+  icon?: any
 ) =>
   StyleSheet.create({
     container: {
@@ -22,7 +21,7 @@ export const styles = (
       justifyContent: "center",
       height: !!icon ? 24 : 56,
       marginVertical,
-      borderWidth: !!icon || common ? 0 : 2,
+      borderWidth: !!icon || common ? 0 : 1,
       borderColor: secundary
         ? THEME.BORDER_COLOR.BLUE_LIGHT
         : THEME.BORDER_COLOR.BLUE_DARKNESS,

@@ -24,4 +24,21 @@ export const styles = () =>
       color: THEME.TEXT_COLOR.BLUE,
       marginLeft: 5,
     },
+    box_text_line: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      width: "90%",
+      marginVertical: 8,
+    },
+    text_or: {
+      fontFamily: THEME.FONT_FAMILY[500],
+      fontSize: THEME.FONT_SIZE.MD,
+      color: THEME.TEXT_COLOR.BLUE_DARK,
+    },
+    box_button_register: {
+      flexDirection: "column",
+      width: "90%",
+      marginVertical: 32,
+    },
   });

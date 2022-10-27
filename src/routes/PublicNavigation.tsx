@@ -5,7 +5,7 @@ import { FeatureGroup } from "../@types/groups";
 
 const { Navigator, Screen } = createStackNavigator();
 
-const features = ["Initial", "Registrar"];
+const features = ["Initial", "Registrar", "Login"];
 
 const routes = Object.keys(publicFeatures).map(
   (feature: keyof FeatureGroup) => {

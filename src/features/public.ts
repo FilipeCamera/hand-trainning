@@ -1,5 +1,6 @@
 import { FeatureGroup } from "../@types/groups";
 import Initial from "../screens/Initial";
+import Login from "../screens/Login";
 import Registrar from "../screens/Registrar";
 
 const publicFeatures: FeatureGroup = {
@@ -15,6 +16,15 @@ const publicFeatures: FeatureGroup = {
   Registrar: {
     enabled: true,
     component: Registrar,
+    enabledMethod: {
+      google: false,
+      apple: false,
+      facebook: false,
+    },
+  },
+  Login: {
+    enabled: true,
+    component: Login,
     enabledMethod: {
       google: false,
       apple: false,

@@ -5,33 +5,40 @@ import Input from "../../components/Input";
 import Scroll from "../../components/Scroll";
 import Space from "../../components/Space";
 import Line from "../../assets/svg/line.svg";
-import { styles } from "./styles";
 import ButtonOutline from "../../components/ButtonOutline";
+import { styles } from "./styles";
 
-// TODO: finalizar a tela de registrar adicionando os últimos componentes
-
-export default function Registrar({ navigation }) {
+export default function Login({ navigation }) {
   return (
     <View style={styles().container}>
       <Scroll showsVerticalScrollIndicator={false}>
-        <Header title="Registrar" navigation={navigation} />
+        <Header title="Efetuar login" navigation={navigation} />
         <Space value={16} />
         <Input placeholder="E-mail" />
         <Space value={5} />
         <Input placeholder="Senha" secureTextEntry />
         <Space value={5} />
-        <Input placeholder="Confimar senha" secureTextEntry />
+        <View style={styles().box_forgot_password}>
+          <Button
+            title=""
+            icon={
+              <Text style={styles().text_forgot_password}>
+                Esqueceu a senha?
+              </Text>
+            }
+          />
+        </View>
         <Space value={28} />
         <View style={styles().button_full}>
-          <Button title="Cadastrar" secundary common />
+          <Button title="Acessar" secundary common />
         </View>
         <Space value={8} />
         <View style={styles().box_button_login}>
-          <Text style={styles().text_login}>Já possui uma conta?</Text>
+          <Text style={styles().text_login}>Não possui uma conta?</Text>
           <Button
-            onPress={() => navigation.navigate("Login")}
+            onPress={() => navigation.navigate("Registrar")}
             title=""
-            icon={<Text style={styles().text_login_button}>Faça o login</Text>}
+            icon={<Text style={styles().text_login_button}>Cadastre-se</Text>}
           />
         </View>
         <View style={styles().box_text_line}>

@@ -20,7 +20,12 @@ export default function Initial({ navigation }) {
             marginVertical={4}
             onPress={() => navigation.navigate("Registrar")}
           />
-          <Button title="Já tenho uma conta" secundary marginVertical={4} />
+          <Button
+            title="Já tenho uma conta"
+            secundary
+            marginVertical={4}
+            onPress={() => navigation.navigate("Login")}
+          />
         </View>
       </Scroll>
     </LinearBackground>

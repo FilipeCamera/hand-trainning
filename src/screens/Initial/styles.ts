@@ -3,7 +3,8 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   buttons: {
     width: "90%",
-    marginTop: 580,
+    position: 'absolute',
+    bottom: 25
   },
 
   logo_text: {

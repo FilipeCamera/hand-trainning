@@ -1,4 +1,5 @@
 import { View, Text } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
 import Input from "../../components/Input";
@@ -10,6 +11,8 @@ import { styles } from "./styles";
 
 export default function Login({ navigation }) {
   return (
+    <>
+    <StatusBar style="dark"/>
     <View style={styles().container}>
       <Scroll showsVerticalScrollIndicator={false}>
         <Header title="Efetuar login" navigation={navigation} />
@@ -52,5 +55,6 @@ export default function Login({ navigation }) {
         </View>
       </Scroll>
     </View>
+    </>
   );
 }

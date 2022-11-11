@@ -1,8 +1,8 @@
-import { TextInput, TextInputProps } from "react-native";
-import THEME from "../../styles/theme";
-import { styles } from "./styles";
+import { TextInput, TextInputProps } from 'react-native';
+import THEME from '../../styles/theme';
+import { styles } from './styles';
 
-interface InputProps extends TextInputProps {}
+type InputProps = {} & TextInputProps;
 
 export default function Input({ ...props }: InputProps) {
   return (

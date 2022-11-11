@@ -1,7 +1,7 @@
-import { FeatureGroup } from "../@types/groups";
-import Initial from "../screens/Initial";
-import Login from "../screens/Login";
-import Registrar from "../screens/Registrar";
+import { FeatureGroup } from '../@types/groups';
+import Initial from '../screens/Initial';
+import Login from '../screens/Login';
+import Registrar from '../screens/Registrar';
 
 const publicFeatures: FeatureGroup = {
   Initial: {

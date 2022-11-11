@@ -1,13 +1,13 @@
-import { StyleSheet } from "react-native";
-import THEME from "../../styles/theme";
+import { StyleSheet } from 'react-native';
+import THEME from '../../styles/theme';
 
 const styles = () =>
   StyleSheet.create({
     container: {
-      width: "100%",
+      width: '100%',
       height: 56,
-      alignItems: "center",
-      justifyContent: "center",
+      alignItems: 'center',
+      justifyContent: 'center',
       borderRadius: 8,
       borderWidth: 1,
       marginVertical: 4,
@@ -19,7 +19,7 @@ const styles = () =>
       color: THEME.TEXT_COLOR.BLUE_DARK,
     },
     icon: {
-      position: "absolute",
+      position: 'absolute',
       left: 22,
     },
   });

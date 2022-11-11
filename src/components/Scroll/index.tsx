@@ -1,8 +1,8 @@
-import { ScrollView, ScrollViewProps } from "react-native";
+import { ScrollView, ScrollViewProps } from 'react-native';
 
-interface ScrollProps extends ScrollViewProps {
+type ScrollProps = {
   children: any;
-}
+} & ScrollViewProps;
 
 export default function Scroll({ children, ...props }: ScrollProps) {
   return (
@@ -10,7 +10,7 @@ export default function Scroll({ children, ...props }: ScrollProps) {
       contentContainerStyle={{
         flexGrow: 1,
         paddingBottom: 16,
-        alignItems: "center",
+        alignItems: 'center',
       }}
       {...props}
     >

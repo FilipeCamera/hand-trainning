@@ -1,9 +1,9 @@
-import { View } from "react-native";
-import { styles } from "./styles";
+import { View } from 'react-native';
+import { styles } from './styles';
 
-interface SpaceProps {
+type SpaceProps = {
   value: number;
-}
+};
 
 export default function Space({ value }: SpaceProps) {
   return <View style={styles(value).container} />;

@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native";
-import THEME from "../../styles/theme";
+import { StyleSheet } from 'react-native';
+import THEME from '../../styles/theme';
 
 export const styles = () =>
   StyleSheet.create({
@@ -8,11 +8,11 @@ export const styles = () =>
       flex: 1,
     },
     button_full: {
-      width: "90%",
+      width: '90%',
     },
     box_button_login: {
-      flexDirection: "row",
-      alignItems: "center",
+      flexDirection: 'row',
+      alignItems: 'center',
       marginVertical: 24,
     },
     text_login: {
@@ -20,10 +20,10 @@ export const styles = () =>
       color: THEME.TEXT_COLOR.BLUE_DARK,
     },
     box_forgot_password: {
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "flex-start",
-      width: "90%",
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'flex-start',
+      width: '90%',
     },
     text_forgot_password: {
       fontFamily: THEME.FONT_FAMILY[500],
@@ -35,10 +35,10 @@ export const styles = () =>
       marginLeft: 5,
     },
     box_text_line: {
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "space-between",
-      width: "90%",
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      width: '90%',
       marginVertical: 8,
     },
     text_or: {
@@ -47,8 +47,8 @@ export const styles = () =>
       color: THEME.TEXT_COLOR.BLUE_DARK,
     },
     box_button_register: {
-      flexDirection: "column",
-      width: "90%",
+      flexDirection: 'column',
+      width: '90%',
       marginVertical: 32,
     },
   });

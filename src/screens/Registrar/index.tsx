@@ -12,9 +12,9 @@ import Space from '../../components/Space';
 import { styles } from './styles';
 
 export default function Registrar({ navigation }) {
-  const [email, setEmail] = useState<string>('')
-  const [password, setPassword] = useState<string>('')
-  const [confirmPassword, setConfirmPassword] = useState<string>('')
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [confirmPassword, setConfirmPassword] = useState<string>('');
 
   return (
     <>
@@ -63,5 +63,5 @@ export default function Registrar({ navigation }) {
         </Scroll>
       </View>
     </>
-  )
+  );
 }

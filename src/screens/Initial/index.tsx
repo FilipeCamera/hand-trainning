@@ -1,12 +1,11 @@
-import { View } from "react-native";
-import styles from "./styles";
-import LogoText from "../../assets/svg/logotext.svg";
-import RunnerGirl from "../../assets/svg/runner_girl.svg";
-import Button from "../../components/Button";
-import LinearBackground from "../../components/LinearBackground";
-import Scroll from "../../components/Scroll";
-import { responsive } from "../../utils/responsive";
-import THEME from "../../styles/theme";
+import { View } from 'react-native';
+import styles from './styles';
+import LogoText from '../../assets/svg/logotext.svg';
+import RunnerGirl from '../../assets/svg/runner_girl.svg';
+import Button from '../../components/Button';
+import LinearBackground from '../../components/LinearBackground';
+import Scroll from '../../components/Scroll';
+import { responsive } from '../../utils/responsive';
 
 export default function Initial({ navigation }) {
   return (
@@ -18,13 +17,13 @@ export default function Initial({ navigation }) {
           <Button
             title="Começar"
             marginVertical={4}
-            onPress={() => navigation.navigate("Registrar")}
+            onPress={() => navigation.navigate('Registrar')}
           />
           <Button
             title="Já tenho uma conta"
             secundary
             marginVertical={4}
-            onPress={() => navigation.navigate("Login")}
+            onPress={() => navigation.navigate('Login')}
           />
         </View>
       </Scroll>

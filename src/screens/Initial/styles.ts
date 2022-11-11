@@ -1,19 +1,19 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   buttons: {
-    width: "90%",
+    width: '90%',
     position: 'absolute',
-    bottom: 25
+    bottom: 25,
   },
 
   logo_text: {
-    position: "absolute",
+    position: 'absolute',
     top: 16,
     left: 22,
   },
   girl_runner: {
-    position: "absolute",
+    position: 'absolute',
     top: 126,
     right: 16,
   },

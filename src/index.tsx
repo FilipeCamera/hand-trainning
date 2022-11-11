@@ -1,6 +1,5 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
-import Initial from "./screens/Initial";
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 
 import {
   useFonts,
@@ -9,10 +8,10 @@ import {
   Poppins_600SemiBold,
   Poppins_700Bold,
   Poppins_800ExtraBold,
-} from "@expo-google-fonts/poppins";
-import { ActivityIndicator } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import PublicNavigation from "./routes/PublicNavigation";
+} from '@expo-google-fonts/poppins';
+import { ActivityIndicator } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import PublicNavigation from './routes/PublicNavigation';
 
 export default function App() {
   const [fontsLoaded] = useFonts({

@@ -1,30 +1,23 @@
-import { StyleSheet } from "react-native";
-import THEME from "../../styles/theme";
+import { StyleSheet } from 'react-native';
+import THEME from '../../styles/theme';
 
-export const styles = (
-  secundary: boolean,
-  common?: boolean,
-  marginVertical?: number,
-  icon?: any
-) =>
+export const styles = (secundary: boolean, common?: boolean, marginVertical?: number, icon?: any) =>
   StyleSheet.create({
     container: {
-      backgroundColor: !!icon
-        ? ""
+      backgroundColor: icon
+        ? ''
         : secundary
         ? common
           ? THEME.BACKGROUND_COLOR.BLUE
           : THEME.BACKGROUND_COLOR.WHITE
         : THEME.BACKGROUND_COLOR.BLUE_DARK,
       borderRadius: 8,
-      alignItems: "center",
-      justifyContent: "center",
-      height: !!icon ? 24 : 56,
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: icon ? 24 : 56,
       marginVertical,
       borderWidth: !!icon || common ? 0 : 1,
-      borderColor: secundary
-        ? THEME.BORDER_COLOR.BLUE_LIGHT
-        : THEME.BORDER_COLOR.BLUE_DARKNESS,
+      borderColor: secundary ? THEME.BORDER_COLOR.BLUE_LIGHT : THEME.BORDER_COLOR.BLUE_DARKNESS,
       elevation: common ? 4 : 0,
     },
     text: {

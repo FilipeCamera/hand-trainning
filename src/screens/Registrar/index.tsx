@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { View, Text } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
 import Input from "../../components/Input";
@@ -8,19 +10,24 @@ import Line from "../../assets/svg/line.svg";
 import { styles } from "./styles";
 import ButtonOutline from "../../components/ButtonOutline";
 
-// TODO: finalizar a tela de registrar adicionando os últimos componentes
 
 export default function Registrar({ navigation }) {
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [confirmPassword, setConfirmPassword] = useState<string>('');
+
   return (
+    <>
+    <StatusBar style="dark"/>
     <View style={styles().container}>
       <Scroll showsVerticalScrollIndicator={false}>
         <Header title="Registrar" navigation={navigation} />
         <Space value={16} />
-        <Input placeholder="E-mail" />
+        <Input placeholder="E-mail" value={email} onChangeText={(e: string) => setEmail(e)}/>
         <Space value={5} />
-        <Input placeholder="Senha" secureTextEntry />
+        <Input placeholder="Senha" value={password} secureTextEntry onChangeText={(e: string) => setPassword(e)}/>
         <Space value={5} />
-        <Input placeholder="Confimar senha" secureTextEntry />
+        <Input placeholder="Confimar senha" value={confirmPassword} secureTextEntry onChangeText={(e: string) => setConfirmPassword(e)}/>
         <Space value={28} />
         <View style={styles().button_full}>
           <Button title="Cadastrar" secundary common />
@@ -45,5 +52,6 @@ export default function Registrar({ navigation }) {
         </View>
       </Scroll>
     </View>
+    </>
   );
 }

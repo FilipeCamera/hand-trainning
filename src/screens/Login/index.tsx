@@ -8,7 +8,7 @@ import Scroll from '../../components/Scroll';
 import Space from '../../components/Space';
 import Line from '../../assets/svg/line.svg';
 import ButtonOutline from '../../components/ButtonOutline';
-import { styles } from './styles';
+import styles from './styles';
 
 export default function Login({ navigation }) {
   const [email, setEmail] = useState<string>('');

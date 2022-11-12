@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import THEME from '../../styles/theme';
 
-export const styles = () =>
+const styles = () =>
   StyleSheet.create({
     container: {
       backgroundColor: THEME.BACKGROUND_COLOR.LIGHT_WHITE,
@@ -15,3 +15,5 @@ export const styles = () =>
       paddingVertical: 8,
     },
   });
+
+export default styles;

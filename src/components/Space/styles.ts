@@ -1,8 +1,10 @@
 import { StyleSheet } from 'react-native';
 
-export const styles = (value: number) =>
+const styles = (value: number) =>
   StyleSheet.create({
     container: {
       marginVertical: value,
     },
   });
+
+export default styles;

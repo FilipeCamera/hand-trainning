@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import THEME from '../../styles/theme';
 
-export const styles = (secundary: boolean, common?: boolean, marginVertical?: number, icon?: any) =>
+const styles = (secundary: boolean, common?: boolean, marginVertical?: number, icon?: any) =>
   StyleSheet.create({
     container: {
       backgroundColor: icon
@@ -30,3 +30,5 @@ export const styles = (secundary: boolean, common?: boolean, marginVertical?: nu
         : THEME.TEXT_COLOR.WHITE,
     },
   });
+
+export default styles;

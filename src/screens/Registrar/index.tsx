@@ -9,7 +9,7 @@ import Header from '../../components/Header';
 import Input from '../../components/Input';
 import Scroll from '../../components/Scroll';
 import Space from '../../components/Space';
-import { styles } from './styles';
+import styles from './styles';
 
 export default function Registrar({ navigation }) {
   const [email, setEmail] = useState<string>('');

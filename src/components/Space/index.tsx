@@ -1,5 +1,5 @@
 import { View } from 'react-native';
-import { styles } from './styles';
+import styles from './styles';
 
 type SpaceProps = {
   value: number;

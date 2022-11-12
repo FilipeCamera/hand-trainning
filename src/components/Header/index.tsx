@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native';
 import Button from '../Button';
 import ArrowBack from '../../assets/svg/arrow_back.svg';
-import { styles } from './styles';
+import styles from './styles';
 
 type HeaderProps = {
   title: string;

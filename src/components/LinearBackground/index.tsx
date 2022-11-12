@@ -1,6 +1,6 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import THEME from '../../styles/theme';
-import { styles } from './styles';
+import styles from './styles';
 
 export default function LinearBackground({ children }) {
   return (

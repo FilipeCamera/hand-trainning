@@ -1,6 +1,6 @@
 import { TextInput, TextInputProps } from 'react-native';
 import THEME from '../../styles/theme';
-import { styles } from './styles';
+import styles from './styles';
 
 type InputProps = {} & TextInputProps;
 

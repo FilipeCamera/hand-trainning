@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
 type CommonGroup = {
-  enabled: true;
+  enabled: boolean;
   component: React.FC<any>;
 };
 
 type PublicGroup = CommonGroup & {
   enabledMethod: {
-    google: false;
-    apple: false;
-    facebook: false;
+    google: boolean;
+    apple: boolean;
+    facebook: boolean;
   };
 };
 type PrivateGroup = CommonGroup & {};

@@ -21,7 +21,7 @@ const routes = Object.keys(publicFeatures).map((feature: keyof FeatureGroup) => 
   };
 });
 
-export default () => {
+export default function PublicNavigation() {
   return (
     <Navigator initialRouteName="Initial" screenOptions={{ headerShown: false }}>
       {routes.map((route) => (
@@ -29,4 +29,4 @@ export default () => {
       ))}
     </Navigator>
   );
-};
+}

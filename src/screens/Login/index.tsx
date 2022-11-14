@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { View, Text } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import Button from '../../components/Button';
@@ -9,8 +9,10 @@ import Space from '../../components/Space';
 import Line from '../../assets/svg/line.svg';
 import ButtonOutline from '../../components/ButtonOutline';
 import styles from './styles';
+import { Context } from '../../context';
 
 export default function Login({ navigation }) {
+  const { setLogged } = useContext(Context);
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   return (
@@ -37,7 +39,15 @@ export default function Login({ navigation }) {
           </View>
           <Space value={28} />
           <View style={styles().button_full}>
-            <Button title="Acessar" secundary common />
+            <Button
+              title="Acessar"
+              secundary
+              common
+              onPress={() => {
+                setLogged(true);
+                navigation.navigate('Private');
+              }}
+            />
           </View>
           <Space value={8} />
           <View style={styles().box_button_login}>

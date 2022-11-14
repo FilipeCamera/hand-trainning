@@ -11,7 +11,8 @@ import {
 } from '@expo-google-fonts/poppins';
 import { ActivityIndicator } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import PublicNavigation from './routes/PublicNavigation';
+import ContextProvider from './context';
+import Routes from './routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -26,9 +27,11 @@ export default function App() {
     return <ActivityIndicator />;
   }
   return (
-    <NavigationContainer>
-      <StatusBar style="light" translucent backgroundColor="transparent" />
-      <PublicNavigation />
-    </NavigationContainer>
+    <ContextProvider>
+      <NavigationContainer>
+        <StatusBar style="light" translucent backgroundColor="transparent" />
+        <Routes />
+      </NavigationContainer>
+    </ContextProvider>
   );
 }

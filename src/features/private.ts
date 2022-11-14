@@ -3,7 +3,7 @@ import Onboarding from '../screens/Onboarding';
 
 const privateFeatures: FeaturePrivateGroup = {
   Onboarding: {
-    enabled: false,
+    enabled: true,
     component: Onboarding,
   },
 };

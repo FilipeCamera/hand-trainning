@@ -1,11 +1,11 @@
 import { View } from 'react-native';
 import styles from './styles';
 import LogoText from '../../assets/svg/logotext.svg';
-import RunnerGirl from '../../assets/svg/runner_girl.svg';
 import Button from '../../components/Button';
 import LinearBackground from '../../components/LinearBackground';
 import Scroll from '../../components/Scroll';
-import { responsive } from '../../utils/responsive';
+import { responsive } from '../../utils';
+import { RunnerGirl } from '../../constants';
 
 export default function Initial({ navigation }) {
   return (

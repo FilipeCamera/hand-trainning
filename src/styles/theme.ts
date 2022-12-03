@@ -8,6 +8,7 @@ const THEME = {
     BLUE_DARK: '#253452',
     LIGHT_WHITE: '#F1F4FA',
     WHITE: '#FFF',
+    BLACK_LOW_OPACITY: 'rgba(0, 0, 0, 0.25)',
   },
   TEXT_COLOR: {
     BLUE: '#457AE4',

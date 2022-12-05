@@ -4,7 +4,7 @@ type ScrollProps = {
   children: any;
 } & ScrollViewProps;
 
-export default function Scroll({ children, ...props }: ScrollProps) {
+const Scroll = ({ children, ...props }: ScrollProps) => {
   return (
     <ScrollView
       contentContainerStyle={{
@@ -17,4 +17,6 @@ export default function Scroll({ children, ...props }: ScrollProps) {
       {children}
     </ScrollView>
   );
-}
+};
+
+export { Scroll };

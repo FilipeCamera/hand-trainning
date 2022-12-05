@@ -17,4 +17,29 @@ export const styles = () =>
       fontSize: THEME.FONT_SIZE.LG,
       color: THEME.TEXT_COLOR.WHITE,
     },
+    progressBox: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      position: 'absolute',
+      right: 0,
+      bottom: 56,
+    },
+    progressCircle: {
+      width: 42,
+      height: 42,
+      borderRadius: 21,
+      backgroundColor: THEME.BACKGROUND_COLOR.WHITE,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    progressLine: {
+      width: 56,
+      height: 2,
+      backgroundColor: THEME.BACKGROUND_COLOR.WHITE,
+    },
+    progressText: {
+      fontFamily: THEME.FONT_FAMILY[600],
+      fontSize: THEME.FONT_SIZE.LG,
+      color: THEME.TEXT_COLOR.BLUE,
+    },
   });

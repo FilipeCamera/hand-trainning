@@ -2,13 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { View, Text } from 'react-native';
 
-import Line from '../../assets/svg/line.svg';
-import Button from '../../components/Button';
-import ButtonOutline from '../../components/ButtonOutline';
-import Header from '../../components/Header';
-import Input from '../../components/Input';
-import Scroll from '../../components/Scroll';
-import Space from '../../components/Space';
+import { Button, ButtonOutline, Header, Input, Scroll, Space } from '../../components';
+import { Line } from '../../constants';
+
 import styles from './styles';
 
 export default function Registrar({ navigation }) {

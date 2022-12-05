@@ -5,6 +5,8 @@ type SpaceProps = {
   value: number;
 };
 
-export default function Space({ value }: SpaceProps) {
+const Space = ({ value }: SpaceProps) => {
   return <View style={styles(value).container} />;
-}
+};
+
+export { Space };

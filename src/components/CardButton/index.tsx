@@ -7,11 +7,13 @@ type CardButtonProps = {
   onPressAction: (event: GestureResponderEvent) => any;
 };
 
-export default function CardButton({ title, description, onPressAction }: CardButtonProps) {
+const CardButton = ({ title, description, onPressAction }: CardButtonProps) => {
   return (
     <TouchableOpacity onPress={onPressAction} style={styles().container}>
-      {title ? <Text style={styles().title}>{title}</Text> : null}
-      {description ? <Text style={styles().description}>{description}</Text> : null}
+      {!!title && <Text style={styles().title}>{title}</Text>}
+      {!!description && <Text style={styles().description}>{description}</Text>}
     </TouchableOpacity>
   );
-}
+};
+
+export { CardButton };

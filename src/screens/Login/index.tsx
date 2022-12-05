@@ -1,15 +1,11 @@
 import { useContext, useState } from 'react';
 import { View, Text } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import Button from '../../components/Button';
-import Header from '../../components/Header';
-import Input from '../../components/Input';
-import Scroll from '../../components/Scroll';
-import Space from '../../components/Space';
-import Line from '../../assets/svg/line.svg';
-import ButtonOutline from '../../components/ButtonOutline';
+import { Button, Header, Input, Scroll, Space, ButtonOutline } from '../../components';
+
 import styles from './styles';
 import { Context } from '../../context';
+import { Line } from '../../constants';
 
 export default function Login({ navigation }) {
   const { setLogged } = useContext(Context);

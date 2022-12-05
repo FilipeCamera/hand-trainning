@@ -5,7 +5,7 @@ import { FeatureGroup } from '../@types/groups';
 
 const { Navigator, Screen } = createStackNavigator();
 
-const features = ['Onboarding'];
+const features = ['Onboarding', 'CompletarRegistro'];
 
 const routes = Object.keys(privateFeatures).map((feature: keyof FeatureGroup) => {
   if (features.includes(feature) && !!privateFeatures[feature].enabled) {

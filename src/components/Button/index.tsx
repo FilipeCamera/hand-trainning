@@ -9,17 +9,12 @@ type ButtonProps = {
   icon?: any;
 } & TouchableOpacityProps;
 
-export default function Button({
-  title,
-  secundary,
-  icon,
-  common,
-  marginVertical,
-  ...props
-}: ButtonProps) {
+const Button = ({ title, secundary, icon, common, marginVertical, ...props }: ButtonProps) => {
   return (
     <TouchableOpacity {...props} style={styles(secundary, common, marginVertical, icon).container}>
       {icon ? icon : <Text style={styles(secundary, common).text}>{title}</Text>}
     </TouchableOpacity>
   );
-}
+};
+
+export { Button };

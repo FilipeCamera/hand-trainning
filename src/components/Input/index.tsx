@@ -4,7 +4,7 @@ import styles from './styles';
 
 type InputProps = {} & TextInputProps;
 
-export default function Input({ ...props }: InputProps) {
+const Input = ({ ...props }: InputProps) => {
   return (
     <TextInput
       {...props}
@@ -12,4 +12,6 @@ export default function Input({ ...props }: InputProps) {
       placeholderTextColor={THEME.TEXT_COLOR.BLUE_DARK}
     />
   );
-}
+};
+
+export { Input };

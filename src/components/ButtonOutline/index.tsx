@@ -10,7 +10,7 @@ type ButtonOutlineProps = {
   google?: boolean;
 } & TouchableOpacityProps;
 
-export default function ButtonOutline({ title, google, facebook, ...props }: ButtonOutlineProps) {
+const ButtonOutline = ({ title, google, facebook, ...props }: ButtonOutlineProps) => {
   return (
     <TouchableOpacity {...props} style={styles().container}>
       {!!facebook && <FacebookIcon style={styles().icon} />}
@@ -18,4 +18,6 @@ export default function ButtonOutline({ title, google, facebook, ...props }: But
       <Text style={styles().text}>{title}</Text>
     </TouchableOpacity>
   );
-}
+};
+
+export { ButtonOutline };

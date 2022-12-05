@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native';
-import Button from '../Button';
+import { Button } from '../Button';
 import ArrowBack from '../../assets/svg/arrow_back.svg';
 import styles from './styles';
 
@@ -8,7 +8,7 @@ type HeaderProps = {
   navigation: any;
 };
 
-export default function Header({ title, navigation }: HeaderProps) {
+const Header = ({ title, navigation }: HeaderProps) => {
   return (
     <View style={styles().container}>
       <View style={styles().icon}>
@@ -17,4 +17,6 @@ export default function Header({ title, navigation }: HeaderProps) {
       <Text style={styles().text}>{title}</Text>
     </View>
   );
-}
+};
+
+export { Header };

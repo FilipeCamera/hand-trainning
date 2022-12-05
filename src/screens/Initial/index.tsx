@@ -1,9 +1,8 @@
 import { View } from 'react-native';
 import styles from './styles';
 import LogoText from '../../assets/svg/logotext.svg';
-import Button from '../../components/Button';
-import LinearBackground from '../../components/LinearBackground';
-import Scroll from '../../components/Scroll';
+import { Button, LinearBackground, Scroll } from '../../components';
+
 import { responsive } from '../../utils';
 import { RunnerGirl } from '../../constants';
 

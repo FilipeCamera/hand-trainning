@@ -1,4 +1,4 @@
-import { Header, Scroll, Space, Label, Input } from '../../components';
+import { Header, Scroll, Space, Label, Input, Row, SmallInput } from '../../components';
 
 export default function CompletarRegistro({ navigation }) {
   return (
@@ -11,6 +11,14 @@ export default function CompletarRegistro({ navigation }) {
         <Input placeholder="Nome Completo" />
         <Space value={16} />
         <Label title="Informações do aluno" />
+        <Space value={8} />
+        <Row justify="space-around">
+          <SmallInput placeholder="Idade" />
+          <SmallInput placeholder="Peso" />
+          <SmallInput placeholder="Altura" />
+        </Row>
+        <Space value={16} />
+        <Label title="Problemas de saúde" />
       </Scroll>
     </>
   );

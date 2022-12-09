@@ -21,10 +21,10 @@ type useStepsProps = {
 
 const useSteps = ({ stage, onStage }: useStepsProps) => {
   const [title, setTitle] = useState<string>('Escolha seu perfil');
-  console.log(stage);
+
   const handlePress = (value: string, navigation?: any) => {
     if (stage < 2) onStage(stage + 1);
-    console.log(value);
+
     if (navigation) navigation.navigate('CompletarRegistro');
   };
   useEffect(() => {

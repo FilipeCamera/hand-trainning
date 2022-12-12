@@ -24,6 +24,10 @@ export const styles = () =>
       right: 0,
       bottom: 56,
     },
+    progressWrapper: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
     progressCircle: {
       width: 42,
       height: 42,

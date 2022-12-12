@@ -17,7 +17,7 @@ export const styles = () =>
     },
     containerLabelInput: {
       flexDirection: 'column',
-      alignItems: 'flex-start',
-      width: '90%',
+      alignItems: 'center',
+      width: '100%',
     },
   });

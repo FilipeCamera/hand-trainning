@@ -1,39 +1,25 @@
-import {
-  Header,
-  Scroll,
-  Space,
-  Label,
-  Input,
-  Row,
-  SmallInput,
-  CheckLabel,
-  CheckLabelInput,
-} from '../../components';
+import { View } from 'react-native';
+import { Header, Scroll, Space, Label, Input, Button, Row } from '../../components';
+import { styles } from './styles';
+import { AlunoRegistro, TreinadorRegistro } from './TipoRegistro';
 
 export default function CompletarRegistro({ navigation }) {
+  const profile = false;
   return (
-    <>
-      <Header title="Completar Registro" navigation={navigation} />
-      <Scroll>
+    <View style={styles.container}>
+      <Header title="Completar cadastro" navigation={navigation} />
+      <Scroll showsVerticalScrollIndicator={false}>
         <Space value={16} />
         <Label title="Perfil" />
         <Space value={8} />
         <Input placeholder="Nome Completo" />
         <Space value={16} />
-        <Label title="Informações do aluno" />
-        <Space value={8} />
-        <Row justify="space-around">
-          <SmallInput placeholder="Idade" />
-          <SmallInput placeholder="Peso" />
-          <SmallInput placeholder="Altura" />
-        </Row>
-        <Space value={16} />
-        <Label title="Problemas de saúde" />
-        <Space value={8} />
-        <CheckLabel label="test" />
-        <CheckLabel label="test2" />
-        <CheckLabelInput label="test3" />
+        {profile && <TreinadorRegistro />}
+        {!profile && <AlunoRegistro />}
+        <View>
+          <Button title="Finalizar" />
+        </View>
       </Scroll>
-    </>
+    </View>
   );
 }

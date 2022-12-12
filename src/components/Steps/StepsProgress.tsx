@@ -25,14 +25,14 @@ const StepsProgress = ({ stage }: StepsProgressProps) => {
   return (
     <View style={styles().progressBox}>
       {progress.length > 0 &&
-        progress.map((value, index) => {
+        progress.map((value) => {
           return (
-            <>
-              <View style={styles().progressCircle} key={index}>
+            <View key={value} style={styles().progressWrapper}>
+              <View style={styles().progressCircle}>
                 <Text style={styles().progressText}>{value}</Text>
               </View>
               <View style={styles().progressLine} />
-            </>
+            </View>
           );
         })}
     </View>

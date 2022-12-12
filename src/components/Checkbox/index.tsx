@@ -3,6 +3,7 @@ import { useState, Dispatch, SetStateAction } from 'react';
 import { Text, View } from 'react-native';
 import THEME from '../../styles/theme';
 import { Input } from '../Input';
+import { Space } from '../Space';
 import { styles } from './styles';
 
 type CheckLabelProps = {
@@ -48,7 +49,8 @@ const CheckLabelInput = ({ label }: CheckLabelProps) => {
         <Check isChecked={isChecked} setIsChecked={setIsChecked} />
         <Text style={styles().label}>{label}</Text>
       </View>
-      {!!isChecked && <Input placeholder="escreva aqui" />}
+      {!!isChecked && <Space value={4} />}
+      {!!isChecked && <Input placeholder="Qual ou quais?" />}
     </View>
   );
 };

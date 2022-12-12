@@ -1,4 +1,14 @@
-import { Header, Scroll, Space, Label, Input, Row, SmallInput } from '../../components';
+import {
+  Header,
+  Scroll,
+  Space,
+  Label,
+  Input,
+  Row,
+  SmallInput,
+  CheckLabel,
+  CheckLabelInput,
+} from '../../components';
 
 export default function CompletarRegistro({ navigation }) {
   return (
@@ -19,6 +29,10 @@ export default function CompletarRegistro({ navigation }) {
         </Row>
         <Space value={16} />
         <Label title="Problemas de saúde" />
+        <Space value={8} />
+        <CheckLabel label="test" />
+        <CheckLabel label="test2" />
+        <CheckLabelInput label="test3" />
       </Scroll>
     </>
   );

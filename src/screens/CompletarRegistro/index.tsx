@@ -16,9 +16,15 @@ export default function CompletarRegistro({ navigation }) {
         <Space value={16} />
         {profile && <TreinadorRegistro />}
         {!profile && <AlunoRegistro />}
-        <View>
-          <Button title="Finalizar" />
-        </View>
+        <Space value={32} />
+        <Row>
+          <Button
+            title="Finalizar"
+            secundary
+            common
+            onPress={() => navigation.navigate('Dashboard')}
+          />
+        </Row>
       </Scroll>
     </View>
   );

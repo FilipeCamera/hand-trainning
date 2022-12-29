@@ -6,12 +6,15 @@ import {
   CheckLabel,
   CheckLabelInput,
   Input,
+  SexPicker,
 } from '../../components';
 
 const AlunoRegistro = () => {
   return (
     <>
       <Label title="Informações do aluno" />
+      <Space value={8} />
+      <SexPicker />
       <Space value={8} />
       <Row justify="space-around">
         <SmallInput placeholder="Idade" />

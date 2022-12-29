@@ -10,3 +10,5 @@ export * from './Space';
 export * from './Steps';
 export * from './Row';
 export * from './Checkbox';
+export * from './Picker';
+export * from './BottomTabs';

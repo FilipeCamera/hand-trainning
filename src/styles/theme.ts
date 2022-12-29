@@ -16,6 +16,8 @@ const THEME = {
     GRAY: '#c1c1c1',
     GRAY_LIGHT: '#D8D8D8',
     WHITE: '#fff',
+    ACTIVE_TINT_COLOR_TABS: '#457AE4',
+    INACTIVE_TINT_COLOR_TABS: '#B2CCFF',
   },
   BORDER_COLOR: {
     BLUE_LIGHT: '#DAE4FA',

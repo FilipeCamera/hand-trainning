@@ -16,7 +16,7 @@ const routes = Object.keys(publicFeatures).map((feature: keyof FeatureGroup) => 
   }
 
   return {
-    name: '',
+    name: 'Initial',
     component: publicFeatures.Initial.component,
   };
 });

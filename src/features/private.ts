@@ -1,5 +1,6 @@
 import { FeaturePrivateGroup } from '../@types/groups';
 import CompletarRegistro from '../screens/CompletarRegistro';
+import Dashboard from '../screens/Dashboard';
 import Onboarding from '../screens/Onboarding';
 
 const privateFeatures: FeaturePrivateGroup = {
@@ -10,6 +11,10 @@ const privateFeatures: FeaturePrivateGroup = {
   CompletarRegistro: {
     enabled: true,
     component: CompletarRegistro,
+  },
+  Dashboard: {
+    enabled: true,
+    component: Dashboard,
   },
 };
 

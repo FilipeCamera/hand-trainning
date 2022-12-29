@@ -12,6 +12,7 @@ const styles = (secundary: boolean, common?: boolean, marginVertical?: number, i
           : THEME.BACKGROUND_COLOR.WHITE
         : THEME.BACKGROUND_COLOR.BLUE_DARK,
       borderRadius: 8,
+      width: secundary && common ? '100%' : null,
       alignItems: 'center',
       justifyContent: 'center',
       height: icon ? 24 : 56,

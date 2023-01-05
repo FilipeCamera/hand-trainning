@@ -1,11 +1,12 @@
 import { View, Text } from 'react-native';
 import { styles } from './styles';
-import { BottomTabs } from '../../components';
+import { CommonBottomTabs } from '../../components';
+import { CommonFeatures } from '../../features/tabs';
 
 export default function Dashboard({ navigation }) {
   return (
     <View style={styles().container}>
-      <BottomTabs />
+      <CommonBottomTabs views={CommonFeatures} />
     </View>
   );
 }

@@ -11,4 +11,5 @@ export * from './Steps';
 export * from './Row';
 export * from './Checkbox';
 export * from './Picker';
-export * from './BottomTabs';
+export * from './CommonBottomTabs';
+export * from './TrainnerBottomTabs';

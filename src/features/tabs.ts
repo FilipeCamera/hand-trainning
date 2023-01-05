@@ -1,7 +1,8 @@
 import React from 'react';
 import Home from '../screens/Home';
 import { SvgProps } from 'react-native-svg';
-import { HomeIcon, HomeIconDisable } from '../constants';
+import { AnilhaIconDisable, AnillhaIcon, HomeIcon, HomeIconDisable } from '../constants';
+import Trainning from '../screens/Trainning';
 
 type TabsFeature = {
   name: string;
@@ -16,6 +17,12 @@ const CommonFeatures: TabsFeature = [
     component: Home,
     icon: HomeIcon,
     iconDisable: HomeIconDisable,
+  },
+  {
+    name: 'Trainning',
+    component: Trainning,
+    icon: AnillhaIcon,
+    iconDisable: AnilhaIconDisable,
   },
 ];
 

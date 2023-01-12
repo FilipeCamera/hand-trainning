@@ -1,5 +1,4 @@
 export * from './Button';
-export * from './ButtonOutline';
 export * from './CardButton';
 export * from './Header';
 export * from './Input';
@@ -13,3 +12,5 @@ export * from './Checkbox';
 export * from './Picker';
 export * from './CommonBottomTabs';
 export * from './TrainnerBottomTabs';
+export * from './Hero';
+export * from './CardMap';

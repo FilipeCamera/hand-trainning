@@ -6,6 +6,9 @@ import HomeIcon from '../assets/svg/home_icon.svg';
 import HomeIconDisable from '../assets/svg/home_icon_disable.svg';
 import AnillhaIcon from '../assets/svg/anilha_icon.svg';
 import AnilhaIconDisable from '../assets/svg/anilha_icon_disable.svg';
+import AlertIconWhite from '../assets/svg/alert_icon_white.svg';
+import ArrowRightIcon from '../assets/svg/arrow_right.svg';
+import WarningGirl from '../assets/svg/warning_girl.svg';
 
 export {
   RunnerGirl,
@@ -16,4 +19,7 @@ export {
   HomeIconDisable,
   AnillhaIcon,
   AnilhaIconDisable,
+  AlertIconWhite,
+  ArrowRightIcon,
+  WarningGirl,
 };

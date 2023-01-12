@@ -1,10 +1,8 @@
 import { StyleSheet } from 'react-native';
 
-const styles = (value: number) =>
+const styles = (value: number, direction = 'vertical') =>
   StyleSheet.create({
-    container: {
-      marginVertical: value,
-    },
+    container: direction === 'vertical' ? { marginVertical: value } : { marginHorizontal: value },
   });
 
 export default styles;

@@ -12,7 +12,7 @@ import {
 const AlunoRegistro = () => {
   return (
     <>
-      <Label title="Informações do aluno" />
+      <Label title="Dados do aluno" />
       <Space value={8} />
       <SexPicker />
       <Space value={8} />

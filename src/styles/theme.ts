@@ -5,6 +5,7 @@ const THEME = {
   },
   BACKGROUND_COLOR: {
     BLUE: '#457AE4',
+    BLUE_MEDIUM: '#3A66C0',
     BLUE_DARK: '#253452',
     LIGHT_WHITE: '#F1F4FA',
     WHITE: '#FFF',
@@ -13,6 +14,7 @@ const THEME = {
   TEXT_COLOR: {
     BLUE: '#457AE4',
     BLUE_DARK: '#4C5673',
+    BLUE_LIGHT: '#D2D8E7',
     GRAY: '#c1c1c1',
     GRAY_LIGHT: '#D8D8D8',
     WHITE: '#fff',
@@ -26,10 +28,12 @@ const THEME = {
     GRAY: '#999',
   },
   FONT_SIZE: {
+    SM_MIN: 11,
     SM: 14,
     MD: 16,
     LG: 18,
     XL: 22,
+    XL_G: 36,
   },
   FONT_FAMILY: {
     400: 'Poppins_400Regular',

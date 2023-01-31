@@ -1,10 +1,11 @@
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import { CardMap, HeaderInfo, HeroTrainningCard, Scroll, Space } from '../../components';
 import { TopLinear } from '../../constants';
 import { styles } from './styles';
+
 export default function Home({ navigation }) {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Scroll showsVerticalScrollIndicator={false}>
         <TopLinear style={styles.top_linear} height={280} />
         <HeaderInfo navigation={navigation} />
@@ -13,6 +14,6 @@ export default function Home({ navigation }) {
         <Space value={24} />
         <CardMap />
       </Scroll>
-    </View>
+    </SafeAreaView>
   );
 }

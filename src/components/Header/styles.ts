@@ -21,6 +21,11 @@ const styles = () =>
       fontSize: THEME.FONT_SIZE.LG,
       color: THEME.TEXT_COLOR.BLUE_DARK,
     },
+    text_simple: {
+      fontFamily: THEME.FONT_FAMILY[500],
+      fontSize: THEME.FONT_SIZE.LG,
+      color: THEME.TEXT_COLOR.BLUE,
+    },
     box_profile: {
       flexDirection: 'row',
       marginLeft: 16,

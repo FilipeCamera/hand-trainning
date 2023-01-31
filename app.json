@@ -4,12 +4,7 @@
     "slug": "hand-trainning",
     "version": "1.0.0",
     "android": {
-      "package": "com.handtrainning",
-      "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyA6IrmhqRFIHe_hS256R6sHJd5o1JZFQHI"
-        }
-      }
+      "package": "com.handtrainning"
     },
     "assetBundlePatterns": [
       "**/*"

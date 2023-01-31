@@ -14,3 +14,4 @@ export * from './CommonBottomTabs';
 export * from './TrainnerBottomTabs';
 export * from './Hero';
 export * from './CardMap';
+export * from './Search';

@@ -1,8 +1,18 @@
 import React from 'react';
 import Home from '../screens/Home';
 import { SvgProps } from 'react-native-svg';
-import { AnilhaIconDisable, AnillhaIcon, HomeIcon, HomeIconDisable } from '../constants';
+import {
+  AnilhaIconDisable,
+  AnillhaIcon,
+  HomeIcon,
+  HomeIconDisable,
+  PeopleAddDisableIcon,
+  PeopleAddIcon,
+  ProfileDisableIcon,
+  ProfileIcon,
+} from '../constants';
 import Trainning from '../screens/Trainning';
+import AddTrainner from '../screens/AddTrainner';
 
 type TabsFeature = {
   name: string;
@@ -19,10 +29,22 @@ const CommonFeatures: TabsFeature = [
     iconDisable: HomeIconDisable,
   },
   {
-    name: 'Trainning',
+    name: 'Treino',
     component: Trainning,
     icon: AnillhaIcon,
     iconDisable: AnilhaIconDisable,
+  },
+  {
+    name: 'Add Treinador',
+    component: AddTrainner,
+    icon: PeopleAddIcon,
+    iconDisable: PeopleAddDisableIcon,
+  },
+  {
+    name: 'Perfil',
+    component: Trainning,
+    icon: ProfileIcon,
+    iconDisable: ProfileDisableIcon,
   },
 ];
 

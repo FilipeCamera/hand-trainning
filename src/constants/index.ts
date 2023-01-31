@@ -9,6 +9,11 @@ import AnilhaIconDisable from '../assets/svg/anilha_icon_disable.svg';
 import AlertIconWhite from '../assets/svg/alert_icon_white.svg';
 import ArrowRightIcon from '../assets/svg/arrow_right.svg';
 import WarningGirl from '../assets/svg/warning_girl.svg';
+import PeopleAddIcon from '../assets/svg/people_add.svg';
+import PeopleAddDisableIcon from '../assets/svg/people_add_disable.svg';
+import ProfileIcon from '../assets/svg/profile.svg';
+import ProfileDisableIcon from '../assets/svg/profile_disable.svg';
+import SearchIcon from '../assets/svg/search.svg';
 
 export {
   RunnerGirl,
@@ -22,4 +27,9 @@ export {
   AlertIconWhite,
   ArrowRightIcon,
   WarningGirl,
+  PeopleAddIcon,
+  PeopleAddDisableIcon,
+  ProfileIcon,
+  ProfileDisableIcon,
+  SearchIcon,
 };

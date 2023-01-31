@@ -38,4 +38,12 @@ const HeaderInfo = ({ navigation }: HeaderProps) => {
   );
 };
 
-export { Header, HeaderInfo };
+const HeaderSimple = ({ title }: HeaderProps) => {
+  return (
+    <View style={styles().container}>
+      <Text style={styles().text_simple}>{title}</Text>
+    </View>
+  );
+};
+
+export { Header, HeaderInfo, HeaderSimple };

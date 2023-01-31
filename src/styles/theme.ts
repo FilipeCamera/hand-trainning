@@ -7,6 +7,7 @@ const THEME = {
     BLUE: '#457AE4',
     BLUE_MEDIUM: '#3A66C0',
     BLUE_DARK: '#253452',
+    BLUE_LIGHT: '#F2F7FF',
     LIGHT_WHITE: '#F1F4FA',
     WHITE: '#FFF',
     BLACK_LOW_OPACITY: 'rgba(0, 0, 0, 0.25)',

@@ -32,7 +32,7 @@ const HeaderInfo = ({ navigation }: HeaderProps) => {
       <Button
         title=""
         icon={<AlertIconWhite style={styles().alert_icon} width={24} height={24} />}
-        onPress={() => navigation.navigate('Trainning')}
+        onPress={() => navigation.navigate('Treino')}
       />
     </View>
   );
@@ -46,4 +46,16 @@ const HeaderSimple = ({ title }: HeaderProps) => {
   );
 };
 
-export { Header, HeaderInfo, HeaderSimple };
+const HeaderProfile = ({ title }: HeaderProps) => {
+  return (
+    <View style={styles().container_pr}>
+      <View style={styles().box_name_profile}>
+        <Text style={styles().name_profile_text}>{title}</Text>
+      </View>
+      <Space value={24} />
+      <View style={styles().box_image_profile}></View>
+    </View>
+  );
+};
+
+export { Header, HeaderInfo, HeaderSimple, HeaderProfile };

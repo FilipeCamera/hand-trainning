@@ -8,8 +8,10 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     backgroundColor: THEME.BACKGROUND_COLOR.BLUE_LIGHT,
     paddingVertical: 10,
-    paddingHorizontal: 16,
+    paddingHorizontal: 14,
     borderRadius: 8,
+    width: '90%',
+    alignSelf: 'center',
   },
   input: {
     flex: 1,

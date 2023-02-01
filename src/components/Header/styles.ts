@@ -47,6 +47,31 @@ const styles = () =>
     alert_icon: {
       marginRight: 16,
     },
+    container_pr: {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+    box_name_profile: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: THEME.BACKGROUND_COLOR.BLUE_MEDIUM,
+      paddingHorizontal: 24,
+      paddingVertical: 4,
+      borderRadius: 99,
+    },
+    name_profile_text: {
+      fontFamily: THEME.FONT_FAMILY[500],
+      fontSize: THEME.FONT_SIZE.SM,
+      color: THEME.TEXT_COLOR.WHITE,
+    },
+    box_image_profile: {
+      width: 140,
+      height: 140,
+      borderRadius: 70,
+      backgroundColor: THEME.BACKGROUND_COLOR.WHITE,
+      borderWidth: 2,
+      borderColor: THEME.BORDER_COLOR.WHITE,
+    },
   });
 
 export default styles;

@@ -27,6 +27,7 @@ const THEME = {
     BLUE_DARKNESS: '#1E2A42',
     GRAY_LIGHT: '#DEDEDE',
     GRAY: '#999',
+    WHITE: '#fff',
   },
   FONT_SIZE: {
     SM_MIN: 11,

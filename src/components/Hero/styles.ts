@@ -31,4 +31,20 @@ export const styles = () =>
       fontSize: THEME.FONT_SIZE.SM,
       color: THEME.TEXT_COLOR.BLUE_LIGHT,
     },
+    container_technical: {
+      width: '90%',
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+    technical_header: {
+      width: '100%',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+    },
+    technical_header_title: {
+      fontFamily: THEME.FONT_FAMILY[600],
+      fontSize: THEME.FONT_SIZE.MD,
+      color: THEME.TEXT_COLOR.BLUE_DARK,
+    },
   });

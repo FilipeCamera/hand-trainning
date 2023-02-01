@@ -10,7 +10,7 @@ export default function Home({ navigation }) {
         <TopLinear style={styles.top_linear} height={280} />
         <HeaderInfo navigation={navigation} />
         <Space value={12} />
-        <HeroTrainningCard />
+        <HeroTrainningCard navigation={navigation} />
         <Space value={24} />
         <CardMap />
       </Scroll>

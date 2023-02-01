@@ -36,9 +36,9 @@ const ButtonOutline = ({ title, google, facebook, ...props }: ButtonOutlineProps
   );
 };
 
-const ButtonRounded = ({ title }: ButtonProps) => {
+const ButtonRounded = ({ title, ...props }: ButtonProps) => {
   return (
-    <TouchableOpacity style={styles().container_rounded}>
+    <TouchableOpacity style={styles().container_rounded} {...props}>
       <Text style={styles().button_rounded_text}>{title}</Text>
       <ArrowRightIcon />
     </TouchableOpacity>

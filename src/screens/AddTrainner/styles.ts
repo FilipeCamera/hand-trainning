@@ -7,4 +7,14 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 8,
     flex: 1,
   },
+  box_error: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  error_title: {
+    fontFamily: THEME.FONT_FAMILY[500],
+    fontSize: THEME.FONT_SIZE.SM,
+    color: THEME.TEXT_COLOR.GRAY,
+  },
 });

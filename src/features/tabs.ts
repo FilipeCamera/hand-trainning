@@ -13,6 +13,7 @@ import {
 } from '../constants';
 import Trainning from '../screens/Trainning';
 import AddTrainner from '../screens/AddTrainner';
+import Profile from '../screens/Profile';
 
 type TabsFeature = {
   name: string;
@@ -42,7 +43,7 @@ const CommonFeatures: TabsFeature = [
   },
   {
     name: 'Perfil',
-    component: Trainning,
+    component: Profile,
     icon: ProfileIcon,
     iconDisable: ProfileDisableIcon,
   },
